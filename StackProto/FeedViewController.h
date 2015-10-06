@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FeedViewController.h
 //  StackProto
 //
 //  Created by Daniel on 10/6/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface FeedViewController : UIViewController
 
 @end
-

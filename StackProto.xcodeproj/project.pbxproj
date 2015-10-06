@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		8E1AFF711BC417A5003A538F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF701BC417A5003A538F /* main.m */; };
 		8E1AFF741BC417A5003A538F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF731BC417A5003A538F /* AppDelegate.m */; };
-		8E1AFF771BC417A5003A538F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF761BC417A5003A538F /* ViewController.m */; };
 		8E1AFF7A1BC417A5003A538F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1AFF781BC417A5003A538F /* Main.storyboard */; };
 		8E1AFF7C1BC417A5003A538F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E1AFF7B1BC417A5003A538F /* Assets.xcassets */; };
 		8E1AFF7F1BC417A5003A538F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1AFF7D1BC417A5003A538F /* LaunchScreen.storyboard */; };
+		8E1AFF881BC41B20003A538F /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF871BC41B20003A538F /* FeedViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +20,12 @@
 		8E1AFF701BC417A5003A538F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8E1AFF721BC417A5003A538F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8E1AFF731BC417A5003A538F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8E1AFF751BC417A5003A538F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8E1AFF761BC417A5003A538F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8E1AFF791BC417A5003A538F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E1AFF7B1BC417A5003A538F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E1AFF7E1BC417A5003A538F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E1AFF801BC417A5003A538F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E1AFF861BC41B20003A538F /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		8E1AFF871BC41B20003A538F /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +60,8 @@
 			children = (
 				8E1AFF721BC417A5003A538F /* AppDelegate.h */,
 				8E1AFF731BC417A5003A538F /* AppDelegate.m */,
-				8E1AFF751BC417A5003A538F /* ViewController.h */,
-				8E1AFF761BC417A5003A538F /* ViewController.m */,
+				8E1AFF861BC41B20003A538F /* FeedViewController.h */,
+				8E1AFF871BC41B20003A538F /* FeedViewController.m */,
 				8E1AFF781BC417A5003A538F /* Main.storyboard */,
 				8E1AFF7B1BC417A5003A538F /* Assets.xcassets */,
 				8E1AFF7D1BC417A5003A538F /* LaunchScreen.storyboard */,
@@ -149,8 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E1AFF771BC417A5003A538F /* ViewController.m in Sources */,
 				8E1AFF741BC417A5003A538F /* AppDelegate.m in Sources */,
+				8E1AFF881BC41B20003A538F /* FeedViewController.m in Sources */,
 				8E1AFF711BC417A5003A538F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +298,7 @@
 				8E1AFF851BC417A5003A538F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
