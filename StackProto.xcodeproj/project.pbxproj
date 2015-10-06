@@ -63,6 +63,7 @@
 			children = (
 				8E1AFF721BC417A5003A538F /* AppDelegate.h */,
 				8E1AFF731BC417A5003A538F /* AppDelegate.m */,
+				8E1AFF8D1BC42968003A538F /* Utilities */,
 				8E1AFF891BC41BED003A538F /* Feed */,
 				8E1AFF781BC417A5003A538F /* Main.storyboard */,
 				8E1AFF7B1BC417A5003A538F /* Assets.xcassets */,
@@ -90,6 +91,13 @@
 				8E1AFF8B1BC41C0B003A538F /* FeedViewControllerCell.m */,
 			);
 			name = Feed;
+			sourceTree = "<group>";
+		};
+		8E1AFF8D1BC42968003A538F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -2,9 +2,10 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ge7-lE-4AC">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Stack-->
+        <!--STACK-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="FeedViewController" sceneMemberID="viewController">
@@ -23,7 +24,7 @@
                                     <size key="itemSize" width="80" height="80"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="16" minY="24" maxX="16" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="16" minY="88" maxX="16" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeedCell" id="X3i-Ut-SDU" customClass="FeedViewControllerCell">
@@ -49,7 +50,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tIu-b4-Ac8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="08q-Be-so6"/>
+                            <constraint firstItem="tIu-b4-Ac8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="cY9-07-wbB"/>
                             <constraint firstAttribute="trailing" secondItem="tIu-b4-Ac8" secondAttribute="trailing" id="lQB-NU-9P5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tIu-b4-Ac8" secondAttribute="bottom" id="ywE-Tl-ufr"/>
                             <constraint firstItem="tIu-b4-Ac8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zRX-yh-ax2"/>
@@ -59,7 +60,7 @@
                                 <exclude reference="tIu-b4-Ac8"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="08q-Be-so6"/>
+                                <exclude reference="cY9-07-wbB"/>
                                 <exclude reference="lQB-NU-9P5"/>
                                 <exclude reference="zRX-yh-ax2"/>
                                 <exclude reference="ywE-Tl-ufr"/>
@@ -70,14 +71,14 @@
                                 <include reference="tIu-b4-Ac8"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="08q-Be-so6"/>
+                                <include reference="cY9-07-wbB"/>
                                 <include reference="lQB-NU-9P5"/>
                                 <include reference="zRX-yh-ax2"/>
                                 <include reference="ywE-Tl-ufr"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Stack" id="phK-th-tbi"/>
+                    <navigationItem key="navigationItem" title="STACK" id="phK-th-tbi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,6 +89,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ge7-lE-4AC" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GZN-jW-nIe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
