@@ -20,6 +20,7 @@
 		8E1AFF9B1BC4382F003A538F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF9A1BC4382F003A538F /* DataManager.m */; settings = {ASSET_TAGS = (); }; };
 		8E1AFF9F1BC44FE3003A538F /* StackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF9E1BC44FE3003A538F /* StackViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8E1AFFA21BC45082003A538F /* StackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFFA11BC45082003A538F /* StackCell.m */; settings = {ASSET_TAGS = (); }; };
+		8E1AFFA51BC4624C003A538F /* ColorQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFFA41BC4624C003A538F /* ColorQueue.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		8E1AFF9E1BC44FE3003A538F /* StackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackViewController.m; sourceTree = "<group>"; };
 		8E1AFFA01BC45082003A538F /* StackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackCell.h; sourceTree = "<group>"; };
 		8E1AFFA11BC45082003A538F /* StackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackCell.m; sourceTree = "<group>"; };
+		8E1AFFA31BC4624C003A538F /* ColorQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorQueue.h; sourceTree = "<group>"; };
+		8E1AFFA41BC4624C003A538F /* ColorQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				8E1AFF871BC41B20003A538F /* FeedViewController.m */,
 				8E1AFF8A1BC41C0B003A538F /* FeedViewControllerCell.h */,
 				8E1AFF8B1BC41C0B003A538F /* FeedViewControllerCell.m */,
+				8E1AFFA31BC4624C003A538F /* ColorQueue.h */,
+				8E1AFFA41BC4624C003A538F /* ColorQueue.m */,
 			);
 			name = Feed;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				8E1AFF9F1BC44FE3003A538F /* StackViewController.m in Sources */,
 				8E1AFF901BC42BE7003A538F /* UIColor+ColorPalette.m in Sources */,
 				8E1AFF941BC43732003A538F /* User.m in Sources */,
+				8E1AFFA51BC4624C003A538F /* ColorQueue.m in Sources */,
 				8E1AFF881BC41B20003A538F /* FeedViewController.m in Sources */,
 				8E1AFF8C1BC41C0B003A538F /* FeedViewControllerCell.m in Sources */,
 				8E1AFF9B1BC4382F003A538F /* DataManager.m in Sources */,

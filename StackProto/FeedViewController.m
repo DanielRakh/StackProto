@@ -9,6 +9,7 @@
 #import "FeedViewController.h"
 #import "FeedViewControllerCell.h"
 #import "UIColor+ColorPalette.h"
+#import "ColorQueue.h"
 
 @interface FeedViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -21,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor backgroundWhiteColor];
+    
+    
 }
 
 
@@ -32,6 +35,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     FeedViewControllerCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FeedCell" forIndexPath:indexPath];
+    cell.contentView.backgroundColor = [[ColorQueue sharedManager] popAndRecycleColor];
     return cell;
 }
 

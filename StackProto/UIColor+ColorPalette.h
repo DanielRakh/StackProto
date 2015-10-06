@@ -10,8 +10,11 @@
 
 @interface UIColor (ColorPalette)
 
-
 + (UIColor *)offWhiteColor;
 + (UIColor *)backgroundWhiteColor;
++ (UIColor *)midnightBlueColor;
++ (UIColor *)lightBlueColor;
++ (UIColor *)lightPurpleColor;
++ (UIColor *)darkPurpleColor;
 
 @end
