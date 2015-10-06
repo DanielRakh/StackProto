@@ -7,6 +7,8 @@
 //
 
 #import "DataManager.h"
+#import "NetworkService.h"
+#import "User.h"
 
 @implementation DataManager
 
@@ -18,6 +20,22 @@
     });
     return sharedMyManager;
 }
+
+
+- (void)createNewUserWithName:(NSString *)username {
+    
+    [[NetworkService sharedManager]postNewUserWithUsername:username];
+}
+
+
+
+
+//- (NSArray *)usersFeed {
+//    
+//    [NetworkService sharedManager]
+//    
+//    
+//}
 
 
 

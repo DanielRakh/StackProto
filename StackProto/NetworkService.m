@@ -82,7 +82,7 @@ static NSString *usersEndPointURL = @"http://192.168.3.123:3000/users";
         if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
             
             NSInteger statusCode = [(NSHTTPURLResponse *)response statusCode];
-            if (statusCode != 200) {
+            if (statusCode != 201) {
                 NSLog(@"dataTaskWithRequest HTTP status code: %ld", statusCode);
                 return;
             }
@@ -94,12 +94,7 @@ static NSString *usersEndPointURL = @"http://192.168.3.123:3000/users";
         
     
         }] resume];
-    
 }
-
-
-
-
 
 
 

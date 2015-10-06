@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "UIColor+ColorPalette.h"
+#import "DataManager.h"
 
 @interface AppDelegate ()
 
@@ -21,11 +22,6 @@
     
     [UINavigationBar appearance].backgroundColor = [UIColor offWhiteColor];
     [UINavigationBar appearance].translucent = YES;
-    
-    
-    
-    
-    
     
     return YES;
 }

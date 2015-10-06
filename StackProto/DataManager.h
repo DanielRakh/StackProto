@@ -13,4 +13,10 @@
 + (instancetype)sharedManager;
 
 
+- (NSArray *)usersFeed;
+
+- (void)createNewUserWithName:(NSString *)username;
+
+
+
 @end

@@ -18,6 +18,8 @@
 		8E1AFF941BC43732003A538F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF931BC43732003A538F /* User.m */; settings = {ASSET_TAGS = (); }; };
 		8E1AFF981BC43814003A538F /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF971BC43814003A538F /* NetworkService.m */; settings = {ASSET_TAGS = (); }; };
 		8E1AFF9B1BC4382F003A538F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF9A1BC4382F003A538F /* DataManager.m */; settings = {ASSET_TAGS = (); }; };
+		8E1AFF9F1BC44FE3003A538F /* StackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF9E1BC44FE3003A538F /* StackViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8E1AFFA21BC45082003A538F /* StackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFFA11BC45082003A538F /* StackCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,10 @@
 		8E1AFF971BC43814003A538F /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
 		8E1AFF991BC4382F003A538F /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		8E1AFF9A1BC4382F003A538F /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		8E1AFF9D1BC44FE3003A538F /* StackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackViewController.h; sourceTree = "<group>"; };
+		8E1AFF9E1BC44FE3003A538F /* StackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackViewController.m; sourceTree = "<group>"; };
+		8E1AFFA01BC45082003A538F /* StackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackCell.h; sourceTree = "<group>"; };
+		8E1AFFA11BC45082003A538F /* StackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +79,13 @@
 		8E1AFF6E1BC417A5003A538F /* StackProto */ = {
 			isa = PBXGroup;
 			children = (
-				8E1AFF951BC437C5003A538F /* Networking */,
-				8E1AFF911BC43723003A538F /* Model */,
 				8E1AFF721BC417A5003A538F /* AppDelegate.h */,
 				8E1AFF731BC417A5003A538F /* AppDelegate.m */,
+				8E1AFF951BC437C5003A538F /* Networking */,
+				8E1AFF911BC43723003A538F /* Model */,
 				8E1AFF8D1BC42968003A538F /* Utilities */,
 				8E1AFF891BC41BED003A538F /* Feed */,
+				8E1AFF9C1BC44FAA003A538F /* Stack */,
 				8E1AFF781BC417A5003A538F /* Main.storyboard */,
 				8E1AFF7B1BC417A5003A538F /* Assets.xcassets */,
 				8E1AFF7D1BC417A5003A538F /* LaunchScreen.storyboard */,
@@ -134,6 +141,17 @@
 				8E1AFF971BC43814003A538F /* NetworkService.m */,
 			);
 			name = Networking;
+			sourceTree = "<group>";
+		};
+		8E1AFF9C1BC44FAA003A538F /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				8E1AFF9D1BC44FE3003A538F /* StackViewController.h */,
+				8E1AFF9E1BC44FE3003A538F /* StackViewController.m */,
+				8E1AFFA01BC45082003A538F /* StackCell.h */,
+				8E1AFFA11BC45082003A538F /* StackCell.m */,
+			);
+			name = Stack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,12 +225,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E1AFF741BC417A5003A538F /* AppDelegate.m in Sources */,
+				8E1AFF9F1BC44FE3003A538F /* StackViewController.m in Sources */,
 				8E1AFF901BC42BE7003A538F /* UIColor+ColorPalette.m in Sources */,
 				8E1AFF941BC43732003A538F /* User.m in Sources */,
 				8E1AFF881BC41B20003A538F /* FeedViewController.m in Sources */,
 				8E1AFF8C1BC41C0B003A538F /* FeedViewControllerCell.m in Sources */,
 				8E1AFF9B1BC4382F003A538F /* DataManager.m in Sources */,
 				8E1AFF981BC43814003A538F /* NetworkService.m in Sources */,
+				8E1AFFA21BC45082003A538F /* StackCell.m in Sources */,
 				8E1AFF711BC417A5003A538F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
