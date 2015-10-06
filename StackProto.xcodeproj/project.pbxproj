@@ -13,6 +13,7 @@
 		8E1AFF7C1BC417A5003A538F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E1AFF7B1BC417A5003A538F /* Assets.xcassets */; };
 		8E1AFF7F1BC417A5003A538F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1AFF7D1BC417A5003A538F /* LaunchScreen.storyboard */; };
 		8E1AFF881BC41B20003A538F /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF871BC41B20003A538F /* FeedViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8E1AFF8C1BC41C0B003A538F /* FeedViewControllerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF8B1BC41C0B003A538F /* FeedViewControllerCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		8E1AFF801BC417A5003A538F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E1AFF861BC41B20003A538F /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
 		8E1AFF871BC41B20003A538F /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		8E1AFF8A1BC41C0B003A538F /* FeedViewControllerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewControllerCell.h; sourceTree = "<group>"; };
+		8E1AFF8B1BC41C0B003A538F /* FeedViewControllerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewControllerCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +63,7 @@
 			children = (
 				8E1AFF721BC417A5003A538F /* AppDelegate.h */,
 				8E1AFF731BC417A5003A538F /* AppDelegate.m */,
-				8E1AFF861BC41B20003A538F /* FeedViewController.h */,
-				8E1AFF871BC41B20003A538F /* FeedViewController.m */,
+				8E1AFF891BC41BED003A538F /* Feed */,
 				8E1AFF781BC417A5003A538F /* Main.storyboard */,
 				8E1AFF7B1BC417A5003A538F /* Assets.xcassets */,
 				8E1AFF7D1BC417A5003A538F /* LaunchScreen.storyboard */,
@@ -77,6 +79,17 @@
 				8E1AFF701BC417A5003A538F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E1AFF891BC41BED003A538F /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				8E1AFF861BC41B20003A538F /* FeedViewController.h */,
+				8E1AFF871BC41B20003A538F /* FeedViewController.m */,
+				8E1AFF8A1BC41C0B003A538F /* FeedViewControllerCell.h */,
+				8E1AFF8B1BC41C0B003A538F /* FeedViewControllerCell.m */,
+			);
+			name = Feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +164,7 @@
 			files = (
 				8E1AFF741BC417A5003A538F /* AppDelegate.m in Sources */,
 				8E1AFF881BC41B20003A538F /* FeedViewController.m in Sources */,
+				8E1AFF8C1BC41C0B003A538F /* FeedViewControllerCell.m in Sources */,
 				8E1AFF711BC417A5003A538F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

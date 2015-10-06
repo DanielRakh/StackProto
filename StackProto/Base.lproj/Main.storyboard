@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Feed View Controller-->
+        <!--Stack-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="FeedViewController" sceneMemberID="viewController">
@@ -15,10 +15,69 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tIu-b4-Ac8">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="32" minimumInteritemSpacing="16" id="5tW-72-0Zp">
+                                    <size key="itemSize" width="80" height="80"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="16" minY="24" maxX="16" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeedCell" id="X3i-Ut-SDU" customClass="FeedViewControllerCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.0" green="0.46666666670000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="customSize" width="80" height="80"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gFf-Kj-oHI"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="e7v-HV-wZd"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tIu-b4-Ac8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="08q-Be-so6"/>
+                            <constraint firstAttribute="trailing" secondItem="tIu-b4-Ac8" secondAttribute="trailing" id="lQB-NU-9P5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tIu-b4-Ac8" secondAttribute="bottom" id="ywE-Tl-ufr"/>
+                            <constraint firstItem="tIu-b4-Ac8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zRX-yh-ax2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="tIu-b4-Ac8"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="08q-Be-so6"/>
+                                <exclude reference="lQB-NU-9P5"/>
+                                <exclude reference="zRX-yh-ax2"/>
+                                <exclude reference="ywE-Tl-ufr"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="tIu-b4-Ac8"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="08q-Be-so6"/>
+                                <include reference="lQB-NU-9P5"/>
+                                <include reference="zRX-yh-ax2"/>
+                                <include reference="ywE-Tl-ufr"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="phK-th-tbi"/>
+                    <navigationItem key="navigationItem" title="Stack" id="phK-th-tbi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
