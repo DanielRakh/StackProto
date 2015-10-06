@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UIColor+ColorPalette.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [UINavigationBar appearance].backgroundColor = [UIColor offWhiteColor];
+    [UINavigationBar appearance].translucent = YES;
+    
     return YES;
 }
 

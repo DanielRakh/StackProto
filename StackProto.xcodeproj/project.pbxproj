@@ -14,6 +14,8 @@
 		8E1AFF7F1BC417A5003A538F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1AFF7D1BC417A5003A538F /* LaunchScreen.storyboard */; };
 		8E1AFF881BC41B20003A538F /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF871BC41B20003A538F /* FeedViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8E1AFF8C1BC41C0B003A538F /* FeedViewControllerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF8B1BC41C0B003A538F /* FeedViewControllerCell.m */; settings = {ASSET_TAGS = (); }; };
+		8E1AFF901BC42BE7003A538F /* UIColor+ColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF8F1BC42BE7003A538F /* UIColor+ColorPalette.m */; settings = {ASSET_TAGS = (); }; };
+		8E1AFF941BC43732003A538F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF931BC43732003A538F /* User.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		8E1AFF871BC41B20003A538F /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 		8E1AFF8A1BC41C0B003A538F /* FeedViewControllerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewControllerCell.h; sourceTree = "<group>"; };
 		8E1AFF8B1BC41C0B003A538F /* FeedViewControllerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewControllerCell.m; sourceTree = "<group>"; };
+		8E1AFF8E1BC42BE7003A538F /* UIColor+ColorPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorPalette.h"; sourceTree = "<group>"; };
+		8E1AFF8F1BC42BE7003A538F /* UIColor+ColorPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorPalette.m"; sourceTree = "<group>"; };
+		8E1AFF921BC43732003A538F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		8E1AFF931BC43732003A538F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 		8E1AFF6E1BC417A5003A538F /* StackProto */ = {
 			isa = PBXGroup;
 			children = (
+				8E1AFF911BC43723003A538F /* Model */,
 				8E1AFF721BC417A5003A538F /* AppDelegate.h */,
 				8E1AFF731BC417A5003A538F /* AppDelegate.m */,
 				8E1AFF8D1BC42968003A538F /* Utilities */,
@@ -96,8 +103,19 @@
 		8E1AFF8D1BC42968003A538F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8E1AFF8E1BC42BE7003A538F /* UIColor+ColorPalette.h */,
+				8E1AFF8F1BC42BE7003A538F /* UIColor+ColorPalette.m */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		8E1AFF911BC43723003A538F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E1AFF921BC43732003A538F /* User.h */,
+				8E1AFF931BC43732003A538F /* User.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +189,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E1AFF741BC417A5003A538F /* AppDelegate.m in Sources */,
+				8E1AFF901BC42BE7003A538F /* UIColor+ColorPalette.m in Sources */,
+				8E1AFF941BC43732003A538F /* User.m in Sources */,
 				8E1AFF881BC41B20003A538F /* FeedViewController.m in Sources */,
 				8E1AFF8C1BC41C0B003A538F /* FeedViewControllerCell.m in Sources */,
 				8E1AFF711BC417A5003A538F /* main.m in Sources */,

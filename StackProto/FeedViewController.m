@@ -8,8 +8,11 @@
 
 #import "FeedViewController.h"
 #import "FeedViewControllerCell.h"
+#import "UIColor+ColorPalette.h"
 
 @interface FeedViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
@@ -17,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor backgroundWhiteColor];
 }
 
 
