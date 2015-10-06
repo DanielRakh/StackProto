@@ -22,6 +22,11 @@
     [UINavigationBar appearance].backgroundColor = [UIColor offWhiteColor];
     [UINavigationBar appearance].translucent = YES;
     
+    
+    
+    
+    
+    
     return YES;
 }
 

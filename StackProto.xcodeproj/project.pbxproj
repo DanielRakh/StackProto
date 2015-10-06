@@ -16,6 +16,8 @@
 		8E1AFF8C1BC41C0B003A538F /* FeedViewControllerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF8B1BC41C0B003A538F /* FeedViewControllerCell.m */; settings = {ASSET_TAGS = (); }; };
 		8E1AFF901BC42BE7003A538F /* UIColor+ColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF8F1BC42BE7003A538F /* UIColor+ColorPalette.m */; settings = {ASSET_TAGS = (); }; };
 		8E1AFF941BC43732003A538F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF931BC43732003A538F /* User.m */; settings = {ASSET_TAGS = (); }; };
+		8E1AFF981BC43814003A538F /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF971BC43814003A538F /* NetworkService.m */; settings = {ASSET_TAGS = (); }; };
+		8E1AFF9B1BC4382F003A538F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF9A1BC4382F003A538F /* DataManager.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,10 @@
 		8E1AFF8F1BC42BE7003A538F /* UIColor+ColorPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorPalette.m"; sourceTree = "<group>"; };
 		8E1AFF921BC43732003A538F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		8E1AFF931BC43732003A538F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		8E1AFF961BC43814003A538F /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		8E1AFF971BC43814003A538F /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
+		8E1AFF991BC4382F003A538F /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		8E1AFF9A1BC4382F003A538F /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 		8E1AFF6E1BC417A5003A538F /* StackProto */ = {
 			isa = PBXGroup;
 			children = (
+				8E1AFF951BC437C5003A538F /* Networking */,
 				8E1AFF911BC43723003A538F /* Model */,
 				8E1AFF721BC417A5003A538F /* AppDelegate.h */,
 				8E1AFF731BC417A5003A538F /* AppDelegate.m */,
@@ -114,8 +121,19 @@
 			children = (
 				8E1AFF921BC43732003A538F /* User.h */,
 				8E1AFF931BC43732003A538F /* User.m */,
+				8E1AFF991BC4382F003A538F /* DataManager.h */,
+				8E1AFF9A1BC4382F003A538F /* DataManager.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		8E1AFF951BC437C5003A538F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8E1AFF961BC43814003A538F /* NetworkService.h */,
+				8E1AFF971BC43814003A538F /* NetworkService.m */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +211,8 @@
 				8E1AFF941BC43732003A538F /* User.m in Sources */,
 				8E1AFF881BC41B20003A538F /* FeedViewController.m in Sources */,
 				8E1AFF8C1BC41C0B003A538F /* FeedViewControllerCell.m in Sources */,
+				8E1AFF9B1BC4382F003A538F /* DataManager.m in Sources */,
+				8E1AFF981BC43814003A538F /* NetworkService.m in Sources */,
 				8E1AFF711BC417A5003A538F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
