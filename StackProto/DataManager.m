@@ -10,7 +10,11 @@
 #import "NetworkService.h"
 #import "User.h"
 
+
+
 @implementation DataManager
+
+
 
 + (instancetype)sharedManager {
     static DataManager *sharedMyManager = nil;
@@ -30,12 +34,21 @@
 
 
 
-//- (NSArray *)usersFeed {
-//    
-//    [NetworkService sharedManager]
-//    
-//    
-//}
+- (void)usersFeed:(didFinishLoading)compBlock {
+    
+    [[NetworkService sharedManager]getUsers:^(BOOL finished, NSArray *users) {
+        compBlock(finished, users);
+    }];
+    
+}
+
+- (void)pushLink:(NSString *)link {
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *userID = [defaults valueForKey:@"user"];
+    [[NetworkService sharedManager]postLink:link forUser:userID];
+    
+}
 
 
 

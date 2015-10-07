@@ -12,9 +12,19 @@
 
 + (UIColor *)offWhiteColor;
 + (UIColor *)backgroundWhiteColor;
-+ (UIColor *)midnightBlueColor;
-+ (UIColor *)lightBlueColor;
-+ (UIColor *)lightPurpleColor;
-+ (UIColor *)darkPurpleColor;
++ (UIColor *)sonicBlueColor;
++ (UIColor *)oldTwitterBlueColor;
++ (UIColor *)babyBlueColor;
++ (UIColor *)appleGreenColor;
++ (UIColor *)pinkishRedColor;
++ (UIColor *)reddishOrangeColor;
++ (UIColor *)darkOrangeColor;
++ (UIColor *)sunnyYellowColor;
++ (UIColor *)uglyGrayColor;
+
+
+
+
+
 
 @end

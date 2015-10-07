@@ -1,5 +1,5 @@
 //
-//  StackViewController.h
+//  UserViewController.h
 //  StackProto
 //
 //  Created by Daniel on 10/6/15.
@@ -8,11 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@class User;
-
-@interface StackViewController : UIViewController
-
-
-@property (nonatomic, strong) NSDictionary *userInfo;
+@interface UserViewController : UIViewController
 
 @end

@@ -8,14 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^didFinishLoading)(BOOL, NSArray *);
+
+
+@class User;
 @interface DataManager : NSObject
 
 + (instancetype)sharedManager;
 
 
-- (NSArray *)usersFeed;
+- (void)usersFeed:(didFinishLoading)compBlock;
 
 - (void)createNewUserWithName:(NSString *)username;
+- (void)pushLink:(NSString *)link;
 
 
 

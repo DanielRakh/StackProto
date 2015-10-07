@@ -22,10 +22,15 @@
     static ColorQueue *sharedMyManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedMyManager = [[self alloc] initWithColors:@[[UIColor midnightBlueColor],
-                                                         [UIColor lightBlueColor],
-                                                         [UIColor lightPurpleColor],
-                                                         [UIColor darkPurpleColor]]];
+        sharedMyManager = [[self alloc] initWithColors:@[[UIColor sonicBlueColor],
+                                                         [UIColor reddishOrangeColor],
+                                                         [UIColor oldTwitterBlueColor],
+                                                         [UIColor darkOrangeColor],
+                                                         [UIColor babyBlueColor],
+                                                         [UIColor appleGreenColor],
+                                                         [UIColor pinkishRedColor],
+                                                         [UIColor sunnyYellowColor],
+                                                         [UIColor uglyGrayColor]]];
     });
     return sharedMyManager;
 }

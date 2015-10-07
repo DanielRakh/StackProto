@@ -21,6 +21,9 @@
 		8E1AFF9F1BC44FE3003A538F /* StackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFF9E1BC44FE3003A538F /* StackViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8E1AFFA21BC45082003A538F /* StackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFFA11BC45082003A538F /* StackCell.m */; settings = {ASSET_TAGS = (); }; };
 		8E1AFFA51BC4624C003A538F /* ColorQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFFA41BC4624C003A538F /* ColorQueue.m */; settings = {ASSET_TAGS = (); }; };
+		8E1AFFA81BC46769003A538F /* ThinlineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFFA71BC46769003A538F /* ThinlineButton.m */; settings = {ASSET_TAGS = (); }; };
+		8E1AFFAC1BC46F9C003A538F /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFFAB1BC46F9C003A538F /* UserViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8E1AFFB01BC476E8003A538F /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AFFAF1BC476E8003A538F /* PostViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,12 @@
 		8E1AFFA11BC45082003A538F /* StackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackCell.m; sourceTree = "<group>"; };
 		8E1AFFA31BC4624C003A538F /* ColorQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorQueue.h; sourceTree = "<group>"; };
 		8E1AFFA41BC4624C003A538F /* ColorQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorQueue.m; sourceTree = "<group>"; };
+		8E1AFFA61BC46769003A538F /* ThinlineButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThinlineButton.h; sourceTree = "<group>"; };
+		8E1AFFA71BC46769003A538F /* ThinlineButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThinlineButton.m; sourceTree = "<group>"; };
+		8E1AFFAA1BC46F9C003A538F /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		8E1AFFAB1BC46F9C003A538F /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		8E1AFFAE1BC476E8003A538F /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		8E1AFFAF1BC476E8003A538F /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +95,11 @@
 				8E1AFF731BC417A5003A538F /* AppDelegate.m */,
 				8E1AFF951BC437C5003A538F /* Networking */,
 				8E1AFF911BC43723003A538F /* Model */,
+				8E1AFFA91BC46F7C003A538F /* User */,
 				8E1AFF8D1BC42968003A538F /* Utilities */,
 				8E1AFF891BC41BED003A538F /* Feed */,
 				8E1AFF9C1BC44FAA003A538F /* Stack */,
+				8E1AFFAD1BC476B5003A538F /* Post */,
 				8E1AFF781BC417A5003A538F /* Main.storyboard */,
 				8E1AFF7B1BC417A5003A538F /* Assets.xcassets */,
 				8E1AFF7D1BC417A5003A538F /* LaunchScreen.storyboard */,
@@ -113,8 +124,8 @@
 				8E1AFF871BC41B20003A538F /* FeedViewController.m */,
 				8E1AFF8A1BC41C0B003A538F /* FeedViewControllerCell.h */,
 				8E1AFF8B1BC41C0B003A538F /* FeedViewControllerCell.m */,
-				8E1AFFA31BC4624C003A538F /* ColorQueue.h */,
-				8E1AFFA41BC4624C003A538F /* ColorQueue.m */,
+				8E1AFFA61BC46769003A538F /* ThinlineButton.h */,
+				8E1AFFA71BC46769003A538F /* ThinlineButton.m */,
 			);
 			name = Feed;
 			sourceTree = "<group>";
@@ -122,6 +133,8 @@
 		8E1AFF8D1BC42968003A538F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8E1AFFA31BC4624C003A538F /* ColorQueue.h */,
+				8E1AFFA41BC4624C003A538F /* ColorQueue.m */,
 				8E1AFF8E1BC42BE7003A538F /* UIColor+ColorPalette.h */,
 				8E1AFF8F1BC42BE7003A538F /* UIColor+ColorPalette.m */,
 			);
@@ -157,6 +170,24 @@
 				8E1AFFA11BC45082003A538F /* StackCell.m */,
 			);
 			name = Stack;
+			sourceTree = "<group>";
+		};
+		8E1AFFA91BC46F7C003A538F /* User */ = {
+			isa = PBXGroup;
+			children = (
+				8E1AFFAA1BC46F9C003A538F /* UserViewController.h */,
+				8E1AFFAB1BC46F9C003A538F /* UserViewController.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		8E1AFFAD1BC476B5003A538F /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				8E1AFFAE1BC476E8003A538F /* PostViewController.h */,
+				8E1AFFAF1BC476E8003A538F /* PostViewController.m */,
+			);
+			name = Post;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E1AFFB01BC476E8003A538F /* PostViewController.m in Sources */,
 				8E1AFF741BC417A5003A538F /* AppDelegate.m in Sources */,
 				8E1AFF9F1BC44FE3003A538F /* StackViewController.m in Sources */,
 				8E1AFF901BC42BE7003A538F /* UIColor+ColorPalette.m in Sources */,
@@ -239,6 +271,8 @@
 				8E1AFF9B1BC4382F003A538F /* DataManager.m in Sources */,
 				8E1AFF981BC43814003A538F /* NetworkService.m in Sources */,
 				8E1AFFA21BC45082003A538F /* StackCell.m in Sources */,
+				8E1AFFA81BC46769003A538F /* ThinlineButton.m in Sources */,
+				8E1AFFAC1BC46F9C003A538F /* UserViewController.m in Sources */,
 				8E1AFF711BC417A5003A538F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

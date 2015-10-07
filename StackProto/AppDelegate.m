@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "UIColor+ColorPalette.h"
 #import "DataManager.h"
+#import "NetworkService.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +23,10 @@
     
     [UINavigationBar appearance].backgroundColor = [UIColor offWhiteColor];
     [UINavigationBar appearance].translucent = YES;
+    
+//    [[NetworkService sharedManager] postLink:@"www.mnepohuy.com" forUser:@"9"];
+//    [[NetworkService sharedManager] postNewUserWithUsername:@"pihy"];
+    
     
     return YES;
 }

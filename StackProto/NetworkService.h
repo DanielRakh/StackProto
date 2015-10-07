@@ -8,12 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^didFinishLoading)(BOOL, NSArray *);
+
 @interface NetworkService : NSObject
 
 + (id)sharedManager;
 
 
-- (NSData *)getUsers;
-- (void)postNewUserWithUsername:(NSString *)username; 
+- (void)getUsers:(didFinishLoading)compBlock;
+
+- (NSString *)postNewUserWithUsername:(NSString *)username;
+- (void)postLink:(NSString *)link forUser:(NSString *)userID;
 
 @end
