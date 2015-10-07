@@ -17,6 +17,7 @@
 @interface FeedViewController ()
 
 @property (nonatomic) NSArray *users;
+@property (nonatomic) UIRefreshControl *refreshControl;
 
 @end
 
@@ -29,16 +30,19 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor backgroundWhiteColor];
     
-    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
-    refreshControl.tintColor = [UIColor blackColor];
-    [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
-    [self.collectionView addSubview:refreshControl];
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    self.refreshControl.tintColor = [UIColor sonicBlueColor];
+    [self.refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+    self.collectionView.alwaysBounceVertical = YES;
+    [self.collectionView addSubview:self.refreshControl];
     
+    [self.refreshControl beginRefreshing];
     
     [[DataManager sharedManager]usersFeed:^(BOOL finished, NSArray *users) {
         if (finished) {
             NSLog(@"%@",users);
             self.users = users;
+            [self.refreshControl endRefreshing];
             [self.collectionView reloadData];
         }
     }];
@@ -55,6 +59,7 @@
 }
 
 
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 
     return self.users.count;
@@ -63,14 +68,24 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     FeedViewControllerCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FeedCell" forIndexPath:indexPath];
-    cell.contentView.backgroundColor = [[ColorQueue sharedManager] popAndRecycleColor];
+//    cell.contentView.backgroundColor = [[ColorQueue sharedManager] popAndRecycleColor];
+    NSString *initials = self.users[indexPath.row][@"username"];
+    cell.nameInitials.text =  [initials substringToIndex:2];
+    cell.contentView.backgroundColor = [UIColor sonicBlueColor];
     return cell;
 }
 
 
 - (void)refresh:(id)sender {
     
-    NSLog(@"REFRESH!");
+    [[DataManager sharedManager]usersFeed:^(BOOL finished, NSArray *users) {
+        if (finished) {
+            NSLog(@"%@",users);
+            self.users = users;
+            [self.refreshControl endRefreshing];
+            [self.collectionView reloadData];
+        }
+    }];
 }
 
 

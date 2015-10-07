@@ -10,6 +10,7 @@
 
 @interface FeedViewControllerCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *nameInitials;
 
 
 @end

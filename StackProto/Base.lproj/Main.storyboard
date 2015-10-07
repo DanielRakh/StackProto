@@ -169,11 +169,43 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbH-WJ-dUd">
+                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                            <color key="textColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                     <animations/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstItem="DbH-WJ-dUd" firstAttribute="centerY" secondItem="xvb-pi-gzT" secondAttribute="centerY" id="CFv-RE-jef"/>
+                                    <constraint firstItem="DbH-WJ-dUd" firstAttribute="centerX" secondItem="xvb-pi-gzT" secondAttribute="centerX" id="gM7-b1-Nea"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="DbH-WJ-dUd"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="CFv-RE-jef"/>
+                                        <exclude reference="gM7-b1-Nea"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="DbH-WJ-dUd"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="CFv-RE-jef"/>
+                                        <include reference="gM7-b1-Nea"/>
+                                    </mask>
+                                </variation>
                                 <connections>
+                                    <outlet property="nameInitials" destination="DbH-WJ-dUd" id="kiL-sI-Jaz"/>
                                     <segue destination="JLx-gh-AEd" kind="show" identifier="pushToStackView" id="HU7-wU-hR9"/>
                                 </connections>
                             </collectionViewCell>

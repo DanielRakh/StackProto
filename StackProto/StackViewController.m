@@ -16,6 +16,7 @@
 @interface StackViewController () <UICollectionViewDataSource, UICollectionViewDelegate, SFSafariViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (nonatomic) NSIndexPath *visibleIndexPath;
 
 @end
 
@@ -50,29 +51,24 @@
     
     NSDictionary *item = self.userInfo[@"posts"][indexPath.item];
     cell.linkLabel.text = item[@"content"];
+    cell.contentView.backgroundColor = [UIColor clearColor];
     return cell;
 }
 
-- (IBAction)openButtonDidTap:(id)sender {
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    CGRect visibleRect = (CGRect){.origin = self.collectionView.contentOffset, .size = self.collectionView.bounds.size};
+    CGPoint visiblePoint = CGPointMake(CGRectGetMidX(visibleRect), CGRectGetMidY(visibleRect));
+    self.visibleIndexPath = [self.collectionView indexPathForItemAtPoint:visiblePoint];
+}
 
-    NSIndexPath *currentIndexPath = self.collectionView.indexPathsForVisibleItems[0];
+- (IBAction)openButtonDidTap:(id)sender {
     
-    NSDictionary *item = self.userInfo[@"posts"][currentIndexPath.item];
+    NSDictionary *item = self.userInfo[@"posts"][self.visibleIndexPath.item];
     
     SFSafariViewController *safariVC = [[SFSafariViewController alloc]initWithURL:[NSURL URLWithString:item[@"content"]] entersReaderIfAvailable:YES];
     safariVC.delegate = self;
     
     [self presentViewController:safariVC animated:YES completion:nil];
 }
-
-
-#pragma mark - SFSafarViewControllerDelegate
-
-- (NSArray<UIActivity *> *)safariViewController:(SFSafariViewController *)controller activityItemsForURL:(NSURL *)URL title:(nullable NSString *)title {
-    
-    return nil;
-}
-
-
 
 @end

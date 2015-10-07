@@ -63,7 +63,7 @@
 - (IBAction)postButtonDidTap:(id)sender {
     
     
-//    [[DataManager sharedManager]pushLink:self.linkLabel.text forUser:<#(User *)#>];
+    [[DataManager sharedManager]pushLink:self.linkLabel.text];
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 

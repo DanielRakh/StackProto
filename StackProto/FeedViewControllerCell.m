@@ -11,6 +11,13 @@
 @implementation FeedViewControllerCell
 
 
+- (void)setBounds:(CGRect)bounds {
+    [super setBounds:bounds];
+    self.contentView.frame = bounds;
+}
+
+
+
 - (void)didMoveToSuperview {
     [super didMoveToSuperview];
     self.layer.cornerRadius = self.bounds.size.height / 2.0;
